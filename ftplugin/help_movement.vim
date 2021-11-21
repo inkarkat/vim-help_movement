@@ -26,4 +26,4 @@ endif
 
 call CountJump#Motion#MakeBracketMotion('<buffer>', '', '', '^=\{10,}$\n\zs', '^.*\n=\{10,}$', 0)
 
-" vim: set sts=4 sw=4 noexpandtab ff=unix fdm=syntax :
+" vim: set ts=8 sts=4 sw=4 noexpandtab ff=unix fdm=syntax :
