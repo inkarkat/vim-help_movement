@@ -1,0 +1,79 @@
+*help_movement.txt*     Movement over Vim help sections with ]] etc.
+
+		       HELP_MOVEMENT    by Ingo Karkat
+							   *help_movement.vim*
+description			|help_movement-description|
+usage				|help_movement-usage|
+installation			|help_movement-installation|
+configuration			|help_movement-configuration|
+limitations			|help_movement-limitations|
+known problems			|help_movement-known-problems|
+todo				|help_movement-todo|
+history				|help_movement-history|
+
+==============================================================================
+DESCRIPTION					   *help_movement-description*
+
+This filetype plugin provides movement commands for Vim help sections.
+
+==============================================================================
+USAGE							 *help_movement-usage*
+                        Move around Vim help sections (starting with a =====
+                        line).
+]]                      Go to [count] next start of a help section.
+][                      Go to [count] next end of a help section.
+[[                      Go to [count] previous start of a help section.
+[]                      Go to [count] previous end of a help section.
+
+==============================================================================
+INSTALLATION					  *help_movement-installation*
+
+The code is hosted in a Git repo at
+    https://github.com/inkarkat/vim-help_movement
+You can use your favorite plugin manager, or "git clone" into a directory used
+for Vim |packages|. Releases are on the "stable" branch, the latest unstable
+development snapshot on "master".
+
+This script is also packaged as a |vimball|. If you have the "gunzip"
+decompressor in your PATH, simply edit the *.vmb.gz package in Vim; otherwise,
+decompress the archive first, e.g. using WinZip. Inside Vim, install by
+sourcing the vimball or via the |:UseVimball| command. >
+    vim help_movement*.vmb.gz
+    :so %
+To uninstall, use the |:RmVimball| command.
+
+DEPENDENCIES					  *help_movement-dependencies*
+
+- Requires Vim 7.0 or higher.
+- Requires the CountJump plugin (vimscript #3130).
+
+==============================================================================
+CONFIGURATION					 *help_movement-configuration*
+
+==============================================================================
+LIMITATIONS					   *help_movement-limitations*
+
+KNOWN PROBLEMS					*help_movement-known-problems*
+
+TODO							  *help_movement-todo*
+
+IDEAS							 *help_movement-ideas*
+
+CONTRIBUTING					    *help_movement-contribute*
+
+Report any bugs, send patches, or suggest features via the issue tracker at
+https://github.com/inkarkat/vim-help_movement/issues or email (address below).
+
+==============================================================================
+HISTORY						       *help_movement-history*
+
+1.00	03-Oct-2010
+First published version.
+
+==============================================================================
+Copyright: (C) 2010-2022 Ingo Karkat
+The VIM LICENSE applies to this plugin; see |copyright|.
+
+Maintainer:	Ingo Karkat <ingo@karkat.de>
+==============================================================================
+ vim:tw=78:ts=8:ft=help:norl:
